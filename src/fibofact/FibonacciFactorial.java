@@ -2,16 +2,16 @@
 package fibofact;
 
 /**
- *
- * @author Alumno
+ * Programa que a partir de un numero dado por el usuario, esta puede generar un resultado de una multiplicaicón factorial, y generar la serie fibonacci hasta la posición que el usuario tecleó
+ * @author Medina Villalpando Josue de Jesus 
  */
 public class FibonacciFactorial {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        //Constructor para ejectuar el frame
+        /**
+     * Constructor para ejectuar el frame
+     */
         Frame frame = new Frame();
         frame.setVisible(true);
     }

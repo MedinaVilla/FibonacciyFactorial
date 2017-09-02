@@ -1,28 +1,37 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ 
  */
 package fibofact;
 
 import java.util.ArrayList;
 
 public class Numero {
-    //Declaración de variables
+    /**Clase numeros
+     * 
+     */
     private int num;
     private int resultado;
     ArrayList<Integer> fibo = new ArrayList<Integer>();
    
-    //Obtiene el numero ingresado
+    /**Obtiene el numero ingresado
+     * 
+     */  
     public int getNum() {
+    
         return this.num;
     }
-    //Guarda el numero ingresado
+    /**Guarda el numero ingresado
+     * 
+     */
     public void setNum(int num) {
+    
         this.num = num;
     }
-    //Metodo para obtener el factorial de un numero ingresadol
+    /**Metodo para obtener el factorial de un numero ingresadol
+     * 
+     */
     public int Factorial(int num) {
+    
         this.resultado = 0;
 
         for (int i = num; i > 1; i--) {
@@ -35,9 +44,11 @@ public class Numero {
         }
         return this.resultado;
     }
-    //Metodo que regresa un arraylist con los numeros de la serie de fibonnacci.
+   /**Metodo que regresa un arraylist con los numeros de la serie de fibonnacci.
+     * 
+     */
     public ArrayList fibonacci(int n) {
-
+    
         this.fibo.removeAll(this.fibo);
         int fibo1 = 0;
         int fibo2 = 1;

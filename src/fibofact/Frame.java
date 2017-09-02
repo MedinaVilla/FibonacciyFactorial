@@ -11,7 +11,7 @@ import javax.swing.JTextField;
 import javax.swing.WindowConstants;
 
 public class Frame extends JFrame {
-//Inicialización de variables J';
+
     String[] items = {"Factorial", "Fibonacci"};
     JLabel label1 = new JLabel("Escriba un numero");
     JTextField num = new JTextField();
@@ -20,7 +20,9 @@ public class Frame extends JFrame {
     JComboBox opcion = new JComboBox(items);
     JLabel label3 = new JLabel("Resultado");
     JTextField res = new JTextField();
-    Numero numi = new Numero();
+    Numero numi = new Numero();/**Configura el frame o ventana';
+ * 
+ */
 
     public Frame() {
 
@@ -32,9 +34,11 @@ public class Frame extends JFrame {
         ConfigVentanaa();
         setLayout(null);
     }
-
+/**Configura los componentes dentro de la ventana
+         * 
+         */
     public void ConfigVentanaa() {
-        //Configura los componentes dentro de la ventana
+        
         label1.setBounds(10, 10, 150, 10);
         label1.setVisible(true);
         add(label1);
@@ -60,16 +64,21 @@ public class Frame extends JFrame {
         res.setEditable(false);
         res.setVisible(true);
         add(res);
-        //Acciones para los botones
+       
         Resultado.addActionListener(new ActionListener() {
 
             @Override
+             /**Verifica que opción del JComboBox eligió, y realizar las acciones respectivamente.
+                 * 
+                 */
             public void actionPerformed(ActionEvent e) {
                 String s = opcion.getSelectedItem().toString();
-                //Verifica que opción del JComboBox eligió, y realizar las acciones respectivamente.
+               
                 if (s.equals("Factorial")) {
                     try {
-                        //Valida que lo que escriba el usuario, sea estrictamente un numero valido
+                        /**Valida que lo que escriba el usuario, sea estrictamente un numero valido
+                         * 
+                         */
                         numi.setNum(Integer.parseInt(String.valueOf(num.getText())));
                         if (numi.getNum() >= 0) {
                             //Ejecuta el método factorial para sacar el factorial del numero ingresado
@@ -85,7 +94,9 @@ public class Frame extends JFrame {
                     }
                 } else if (s.equals("Fibonacci")) {
                     try {
-                        //Valida que lo que escriba el usuario, sea estrictamente un numero válido.
+                        /**Valida que lo que escriba el usuario, sea estrictamente un numero válido.
+                         * 
+                         */
                         numi.setNum(Integer.parseInt(String.valueOf(num.getText())));
                         if (numi.getNum() > 1) {
                             //Ejecuta el metodo Fibonacci para obtener la serie fibonnaci.
