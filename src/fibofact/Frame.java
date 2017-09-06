@@ -9,7 +9,12 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.WindowConstants;
-
+/**
+ * Frame en donde se configura todo lo visible del programa
+ * @author Medina Villalpando Josue de Jesus 
+  * @version 1.0
+ * @since 22/08/17
+ */
 public class Frame extends JFrame {
 
     String[] items = {"Factorial", "Fibonacci"};

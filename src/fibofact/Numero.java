@@ -1,14 +1,14 @@
-/*
- 
- */
 package fibofact;
 
 import java.util.ArrayList;
-
+  /**
+ * Clase en donde recibirá todos los parametros como los numeros ingresados y el resultado final
+ * @author Medina Villalpando Josue de Jesus 
+  * @version 1.0
+ * @since 22/08/17
+ */
 public class Numero {
-    /**Clase numeros
-     * 
-     */
+  
     private int num;
     private int resultado;
     ArrayList<Integer> fibo = new ArrayList<Integer>();
@@ -45,7 +45,7 @@ public class Numero {
         return this.resultado;
     }
    /**Metodo que regresa un arraylist con los numeros de la serie de fibonnacci.
-     * 
+     * @param n El parametro n recibe la longitud de la serie de fibonacci proporcioando por el usuario
      */
     public ArrayList fibonacci(int n) {
     
